@@ -7,5 +7,5 @@ setup(name='Sharon',
       author='Sharon',
       author_email='Sharonvarghesearakkal@gmail.com',
       license='MIT',
-      packages=['Mathquiz'],
+      packages=['Math_quiz'],
       zip_safe=False)
