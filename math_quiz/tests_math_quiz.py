@@ -29,5 +29,5 @@ class TestMathGame(unittest.TestCase):
                 PROBLEM, ANSWER = Operation(num1, num2, operator)
                 self.assertTrue(expected_problem== PROBLEM and expected_answer == ANSWER)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
    unittest.main()

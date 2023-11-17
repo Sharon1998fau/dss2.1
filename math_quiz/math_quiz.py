@@ -14,20 +14,20 @@ def Random_operation():
     return random.choice(['+', '-', '*'])
 
 
-def Operation(Num1, Num2, o):
+def Operation(Num_1, Num_2, o):
     """
     function takes parameters Num1, Num2,o
     computes operation and returns 2 variables
     1. p >>The string containing the problem
     2. a >>The result
     """
-    p = f"{Num1} {o} {Num2}"
+    p = f"{Num_1} {o} {Num_2}"
     if o == '+': 
-        a = Num1 + Num2
+        a = Num_1 + Num_2
     elif o == '-': 
-        a = Num1 - Num2
+        a = Num_1 - Num_2
     else: 
-        a = Num1 * Num2
+        a = Num_1 * Num_2
     return p,a
 
 def math_quiz():
@@ -42,7 +42,7 @@ def math_quiz():
         Num_1 = Random_integer(1, 10)
         Num_2 = Random_integer(1, 54)
         o = Random_operation()
-        PROBLEM, ANSWER = Operation(Num1, Num2, o)
+        PROBLEM, ANSWER = Operation(Num_1, Num_2, o)
         print(f"\nQuestion: {PROBLEM}")
         try:
             useranswer = input("Your answer: ")
@@ -61,5 +61,5 @@ def math_quiz():
 
     print(f"\nGame over! Your score is: {Score}/{t_q}")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     math_quiz()
